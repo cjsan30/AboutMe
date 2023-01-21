@@ -1,4 +1,4 @@
-.container {
+				.container {
 	border:1px solid red;
 	height: 950px;
 }
@@ -77,10 +77,7 @@
 	vertical-align: middle;
 }
 
-.footer {
-	width: 100%;
-	position: relative;
-}
+
 
 .sendbtn {
 	width: 50%;

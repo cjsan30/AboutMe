@@ -7,18 +7,21 @@ export default function NavBar() {
 
     return (
         <nav>
-            <Link href="/" className={[
-                styles.link,
-                router.pathname === "/" ? styles.active : ""
-            ].join(" ") }
-            >
+            <Link href="/">
                  Home
             </Link>
         
             <Link href="/testpage" legacyBehavior>
-                <a className={`${styles.link} 
-                                ${router.pathname === "/testpage" ? styles.active : ""}`}> testpage </a>
+                <a> testpage </a>
             </Link>
+            <style jsx>{`
+                nav {
+                    background-color: blue;
+                }
+                a {
+                    text-decoration: none;
+                }
+            `}</style>
         </nav>
     );
 }
