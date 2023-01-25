@@ -1,0 +1,49 @@
+.introbox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.title {
+    width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 10% 0% 5% 0%;
+	font-size: 48px;
+    font-family: nanumsqureb;
+    
+}
+
+.skills img {
+    width: 125px;
+    height: 125px;
+    border-radius: 30%;
+    overflow: hidden;
+    margin-top: 10%;
+}
+
+.skillcate {
+    font-size: 24px;
+}
+
+.edupri {
+    font-size: 24px;
+}
+
+.edusec {
+    font-size: 18px;
+    margin-bottom: 20%;
+}
+
+.projectCon {
+    width: 100%;
+
+}
+
+.projectCon img {
+    width: 400px; 
+    height: 300px;
+    margin: 0% 5% 10% 0%;
+}

@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "nanumbarun";
+    src: url("../public/fonts/NanumBarunGothic.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "nanumbarunb";
+    src: url("../public/fonts/NanumBarunGothicBold.otf");
+}
+
+@font-face {
+    font-family: "nanumsqurer";
+    src: url("../public/fonts/NanumSquareRoundOTFR.otf");
+}
+
+@font-face {
+    font-family: "nanumsqureb";
+    src: url("../public/fonts/NanumSquareRoundOTFB.otf");
+    font-weight: 500;
+}
+
+html,
+body {
+    margin: 7% 0% 0% 0%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

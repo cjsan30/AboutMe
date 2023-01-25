@@ -7,21 +7,7 @@ export default function NavBar() {
 
     return (
         <nav>
-            <Link href="/">
-                 Home
-            </Link>
-        
-            <Link href="/testpage" legacyBehavior>
-                <a> testpage </a>
-            </Link>
-            <style jsx>{`
-                nav {
-                    background-color: blue;
-                }
-                a {
-                    text-decoration: none;
-                }
-            `}</style>
+
         </nav>
     );
 }
