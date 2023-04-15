@@ -1,24 +1,29 @@
-import { useState, Fragment } from "react";
-import Image from "next/image";
-import Link from "next/link";
+import { useState, Fragment } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import { Container, Box, Grid, Typography, Divider, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
 import { List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 
-import styled from "./index.module.css";
+import styled from './index.module.css';
 import CheckRoundedIcon from '@mui/icons-material/CheckRounded';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import NewspaperRoundedIcon from '@mui/icons-material/NewspaperRounded';
 
-import ImageSlideshow from "../component/ImageSlideShow";
+import ImageSlideshow from '../components/ImageSlideShow';
+
+import ScrollSpy from 'react-ui-scrollspy';
+import Center from '../components/scrollspy/Center/Center';
 
 export default function Main() {
 
 	return (
 		<Fragment>
+			
 			<Container className={styled.backimg}>
 			</Container>
+			
 			<Container maxWidth="xl" >
 				<Grid container>
 					<Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
@@ -53,24 +58,7 @@ export default function Main() {
 									</ListItemIcon>
 									<ListItemText	primary="강점1"/>
 								</ListItem>
-								<ListItem>
-									<ListItemIcon>
-										<CheckRoundedIcon 
-											fontSize="medium"
-											sx={{color: "#006400"}}
-										/>
-									</ListItemIcon>
-									<ListItemText	primary="강점2"/>
-								</ListItem>
-								<ListItem>
-									<ListItemIcon>
-										<CheckRoundedIcon 
-											fontSize="medium"
-											sx={{color: "#006400"}}
-										/>
-									</ListItemIcon>
-									<ListItemText	primary="강점3"/>
-								</ListItem>
+
 								<ListItem>
 									<Grid container rowSpacing={2}
 										sx={{
