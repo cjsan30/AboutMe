@@ -1,4 +1,4 @@
-import { useState, Fragment } from 'react';
+import { useState, Fragment, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Container, Box, Grid, Typography, Divider, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
@@ -13,18 +13,10 @@ import NewspaperRoundedIcon from '@mui/icons-material/NewspaperRounded';
 
 import ImageSlideshow from '../components/ImageSlideShow';
 
-import ScrollSpy from 'react-ui-scrollspy';
-import Center from '../components/scrollspy/Center/Center';
-
 export default function Main() {
-
 	return (
 		<Fragment>
-			
-			<Container className={styled.backimg}>
-			</Container>
-			
-			<Container maxWidth="xl" >
+			<Container maxWidth="xl" sx={{ marginTop: "10vh",}}>
 				<Grid container>
 					<Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
 						<Box className={styled.introbox}>
