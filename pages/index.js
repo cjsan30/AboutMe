@@ -16,7 +16,16 @@ import ImageSlideshow from '../components/ImageSlideShow';
 export default function Main() {
 	return (
 		<Fragment>
-			<Container maxWidth="xl" sx={{ marginTop: "10vh",}}>
+			{/* <Container className={styled.bg_section_0}>
+				<div className={styled.bg_Container}>
+					<Typography className={styled.bg_Container_typo}>
+						test type
+					</Typography>
+					<img src="/mainbg6.jpg" alt="bg" className={styled.bg_Container_rimg}/>
+
+				</div>
+			</Container> */}
+			<Container maxWidth="xl" sx={{marginTop: '10vh',}}>
 				<Grid container>
 					<Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
 						<Box className={styled.introbox}>
@@ -34,27 +43,19 @@ export default function Main() {
 								width: "100%",
 								margin: "0% 0% 0% 5%",
 							}}>
-								<Typography sx={{
-									fontFamily: 'nanumsqureb',
-									fontWeight: '500',
-									fontSize: '48px',
-								}}>
-									안녕하세요. 박민석입니다.
+								<Typography className={styled.title_font} sx={{ marginTop: '5vh',}}>
+									재밌게 살고싶은
 								</Typography>
-								<ListItem>
-									<ListItemIcon>
-										<CheckRoundedIcon 
-											fontSize="medium"
-											sx={{color: "#006400"}}
-										/>
-									</ListItemIcon>
-									<ListItemText	primary="강점1"/>
-								</ListItem>
+								<Typography className={styled.title_font} sx={{ textAlign: 'center', fontSize: '60px !important' }}>
+									웹 개발자 박민석입니다.
+								</Typography>
 
 								<ListItem>
 									<Grid container rowSpacing={2}
 										sx={{
 										width: "100%",
+										margin: '10% 0 0 55%',
+										
 									}}>
 										<Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
 											<List sx={{
@@ -77,7 +78,7 @@ export default function Main() {
 											</List>
 											
 										</Grid> {/* Contact */}
-										<Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+										{/* <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
 											<List sx={{
 												width: "30%",
 											}}>
@@ -100,7 +101,7 @@ export default function Main() {
 													</Link>
 												</ListItem>
 											</List>
-										</Grid> {/* Channel */}
+										</Grid> Channel */}
 									</Grid>
 								</ListItem>
 							</List>
@@ -149,7 +150,7 @@ export default function Main() {
 										/>
 									</AccordionSummary>
 									<AccordionDetails>
-									다년간의 전공 수업을 통해 빠르게 바뀌어가는 개발 트렌드에 적응하는 법을 배우고, 컴퓨터 사이언스 학문에 기초를 배웠습니다. 교내에서의 다양한 활동을 통해 사람들과 소통하는 것도 알게 되었습니다.
+									다년간의 전공 수업을 통해 빠르게 바뀌어가는 개발 트렌드에 적응하는 법을 배웠으며, 교내 활동을 통해 커뮤니케이션에 중요성을 깨닫고 노력하게 되었습니다.
 									</AccordionDetails>
 								</Accordion>
 
@@ -161,7 +162,7 @@ export default function Main() {
 										/>
 									</AccordionSummary>
 									<AccordionDetails>
-									국내와는 다른 환경에서 진행되는 학업은 매일매일이 새로워서 폭넓은 시야를 가지게되었고, 실제 오울루 대학 교내 기업과 연계되어 애자일 방법론에 대해 배울 수 있었던 시간이었습니다.
+									국내와는 다른 환경에서의 학업으로 폭넓은 시야를 가지게 되었고, 실제 오울루 대학 교내 기업과 연계되어 애자일 방법론에 대해 배울 수 있었던 시간이었습니다.
 									</AccordionDetails>
 								</Accordion>
 
@@ -202,7 +203,7 @@ export default function Main() {
 									/>
 								</AccordionSummary>
 								<AccordionDetails>
-									교육 앱 개발을 진행하는 스타트업이며, 현장에서의 협업과 사내문화를 경험할 수 있었습니다. 가장 크게 얻었던 점은 언어와 프로그램이 달라도 겁먹지 않게되었습니다.
+								교육 앱 개발을 진행하는 스타트업이며, 현장에서의 협업과 사내 문화를 경험할 수 있었습니다. 가장 크게 얻었던 점은 효율적인 업무를 위한 방법들을 배웠습니다.
 								</AccordionDetails>
 							</Accordion>
 						</List>
@@ -234,9 +235,10 @@ export default function Main() {
 										<Typography> [프로젝트 업무] </Typography>
 										<br />
 										<Typography>
-										Unity를 사용해 메인화면과, MBTI, 게시판의 UI/UX 부분을 맡았으며, MBTI를 통해 관광지를 추천해 주는 간단한 기능 구현 진행하였습니다.
+										프로젝트 도중에 합류하여 Unity를 사용하여 2D와 전반적인 UI/UX 부분을 담당했습니다.
+										MBTI 파트에서는 사용자의 선택 조건에 따른 관광지 추천 기능을 구현하였습니다.
 										<br /> <br />
-										힘들었던 부분은 생소한 Unity를 가지고 짧은 시간 내에 성과를 내야 하는 상황이 낯설었습니다. Unity와 친해지기 위해 Editor를 유심히 만져보면서 직장동료에게 적절하게 질문했던 점과 팀 미팅 시 디테일한 부분을 요청함으로써 공식 문서를 찾는데 걸리는 시간이 단축되었음
+										
 										</Typography>
 									</Grid>
 								</Grid>
@@ -245,9 +247,10 @@ export default function Main() {
 						</Grid>
 
 						<Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
-						<ImageSlideshow images={["/img/test01.jpg",]}/>
+						{/* <ImageSlideshow images={["/img/test01.jpg",]}/> */}
+						<div style={{width: 300, height: 300,}}></div>
 							<Grid item xs={12} sm={12} md={8} lg={8} xl={8}>
-							<Link href="https://github.com/cjsan30/AboutMe"><Typography sx={{textAlign: "right", fontSize: "18px",}}> Github</Typography></Link>
+							{/* <Link href="https://github.com/cjsan30/AboutMe"><Typography sx={{textAlign: "right", fontSize: "18px",}}> Github</Typography></Link> */}
 							<Typography className={styled.projecttitle}> 포트폴리오</Typography>
 								<Grid container rowSpacing={3}>
 									<Grid item sm={12}>
@@ -262,9 +265,10 @@ export default function Main() {
 										<Typography> [프로젝트 업무] </Typography>
 										<br />
 										<Typography>
-										포트폴리오를 웹 페이지 형식으로 제작하고자 하여, Next.js를 이용했고 Material-UI를 이용해 Design 부분을 보완하였습니다. Firebase로 호스팅을 진행하였고 지속적으로 보완해 나갈 것입니다.
+										웹 페이지 형식의 포트폴리오를 제작해 보고 싶어 진행한 개인 프로젝트입니다.
+										디자인, 기능이 미흡하여 계속해서 보완해나갈 예정입니다.
 										<br /> <br />
-										최근 변경 된 Next.js와 Firebase 버전, Material-UI 대한 국내자료가 부족했던 점에서 공식 Document를 적극적으로 참고함으로써 해결하였습니다.
+										Next.js에 Material-UI를 이용했고, 가비아 도메인 구입 후 Firebase로 호스팅 진행하여 구현하였습니다.
 										</Typography>
 									</Grid>
 								</Grid>
@@ -288,7 +292,7 @@ export default function Main() {
 										<Typography> [프로젝트 업무] </Typography>
 										<br />
 										<Typography>
-											부경대학교 교육 과정 중 진행된 데이터베이스 프로젝트.
+											부경대학교 교육 과정 중 진행된 데이터베이스 프로젝트입니다.
 											<br /> <br />
 											인력과 물품 관리에 대한 데이터베이스 재정비를 위해서 관계도와 테이블 설계서, 순이익, 직급별 월급 등 부가기능도 함께 작성하였습니다.
 										</Typography>
